@@ -12,7 +12,7 @@ First page of actual game shows 3 values:
 (Holiday Cheer) starts with 5% and decreases by 5% slowly with time. Hitting 0% will do nothing.
 (Charity Donations) starts with $50,000 and decreases in increments of 10,000 slowly with time.
 
-A charcteris displayed in middle of the screen, depicting Mariah Carey with Santa hat with holiday background (snow, xmas tree, etc.).
+A charcter is displayed in middle of the screen, depicting Mariah Carey with Santa hat with holiday background (snow, xmas tree, etc.).
 
 3 blank buttons are displayed at the bottom of the screen. 
 User is supposed to deduct from how the values are affected which buttons to click.
@@ -31,6 +31,22 @@ The character is now Krampus. The background is now just fire.
 
 Buttons maintain same functionality. Once the bank account reaches $2,000,000, user wins the game. Page displays "Happy Holidays!" with fire in background.
 
+-----------------------
+USER STORIES:
+
+As a user, I want to add my name and age to the game.
+- want to "win the holidays"
+- want to figure out which value to add to in order to progress
+- do not want bank account value to reach $0. warning is triggered when it reaches a certain amount.
+- I do not want my holiday cheer or my bank account to reach 0, which will also end the game.
+- as my age increase, holiday cheer goes away
+- when  my holiday cheer reaches near 0%, a warning is triggered to keep singing.
+- the more charity donations I make, the more money I lose in my bank account.
+- button 1 will sing, add money to bank account and holiday cheer.
+- button 2 wil sing, add to add to holiday cheer and charity donations and 
+- button 3 will sing, add to holiday cheer and charity dontations, but subtract from bank account.
+- would see occasional messages that say "ooooohh moneeeeeyyy!!!", "diamonds don't pay for themselves...", "I don't see Santa driving a Tesla...", "age is just a number"
+- 
 ## Wireframes:
 
 ## Technologies Used:
