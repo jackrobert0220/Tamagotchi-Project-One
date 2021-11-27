@@ -1,9 +1,11 @@
+console.log("js is loaded");
+
 let nameInput = null;
 let ageInput = null;
 const trashFx = new Audio('https://freesound.org/data/previews/171/171996_112577-lq.mp3');
 const drinkFx = new Audio('https://freesound.org/data/previews/61/61392_792945-lq.mp3');
 const practiceFx = new Audio('https://freesound.org/data/previews/1/1401_838-lq.mp3');
-const songFX = new Audio('./audio/angelofdeath.mp3');
+const songFX = new Audio('./audio/silent_night.mp3');
 
 
 /* Game */
@@ -42,7 +44,7 @@ const songFX = new Audio('./audio/angelofdeath.mp3');
         },
 
         transformCounter() {
-            this. transformTimer = setInterval(this.transformTimer, 1000);
+            this. transformTimer = setInterval(this.transform, 1000);
         },
 
 
@@ -87,15 +89,15 @@ const songFX = new Audio('./audio/angelofdeath.mp3');
         }
     },
 
-    transform () {
+    transform() {
         if (newGame.time < 40) {
             newGame.time++;
             console.log(newGame.time);
         }else{
             clearInterval(newGame.transformCounter);
-            $('#mariah').addClass('flash');
-            $('#mariah').fadeOut(3000);
-            setTimeout(function() { $('#krampus').css('opacity', '100');}, 1000);
+            $('#hippy').addClass('flash');
+            $('#hippy').fadeOut(3000);
+            setTimeout(function() { $('#metalhead').css('opacity', '100');}, 1000);
             setTimeout(playSong, 500);
             setTimeout(function() {$('#message').text("Let's Destroy the Holidays!!! HAHAHA");}, 4000);
             return setTimeout(backTransition, 4000);

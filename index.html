@@ -1,34 +1,123 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Let's Destroy the Holidays!!!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="style/main.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="scripts/app.js" defer></script>
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+        <script src="scripts/app.js" defer></script>
+        
+        <title>Super Thrash Metal Buddies!</title>
     </head>
     <body class ="animate__animated">
 
-        /* Input Info */
-        <div class="container dark" id="input-form">
-            <div class="field name">
-                <label>Name your popstar</label>
-                <input type="text" class="input" id="input-name">
-            </div>
-            <div class="field age">
-                <label>How old is your popstar?</label>
-                <input type="text" class="input" id="input-age">
-                <button class="btn" id="input-button">Start Game</button>
+         <!-- Input Form -->
+    <div class="container dark" id="input-form">
+        <div class="field name">
+            <label>Name your buddy</label>
+            <input type="text" class="input" id="input-name">
+        </div>
+        <div class="field age">
+            <label>How old is your buddy?</label>
+            <input type="text" class="input" id="input-age">
+            <button class="btn" id="input-button">Start Game</button>
+        </div>
+    </div>
+
+
+    <!-- Quit Windows -->
+    <div class="container dark quit" id="quit-rage">
+        <p> Your buddy got pissed off and quit the band.</p>
+    </div>
+
+    <div class="container dark quit" id="quit-beer">
+        <p> Your buddy sobered up and quit the band.</p>
+    </div>
+
+    <div class="container dark quit" id="quit-skill">
+        <p> Your buddy sucks at guitar and quit the band.</p>
+    </div>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header left">
+            <div class="container dark">
+                <p>Name:<span id="span-name"></span></p>
             </div>
         </div>
-       
+        <div class="header middle"></div>
+        <div class="header right">
+            <div class="container dark">
+                <p>Age:<span id="span-age"></span></p>
+            </div>
+        </div>
+    </header>
 
 
+    <!-- Main Gameplay Section -->
+
+    <!-- Rage Metrics -->
+    <main class="maingame">
+        <img src="/images/fire.jpeg" alt="" class="demon-throne" id="demon-throne">
+        <section class="gamearea rage">
+            <!-- <div class="container trash"> -->
+            <button type="button" class="btn trash" id="trash">Trash Dressing Room</button>
+            <!-- </div> -->
+            <div class="progress error">
+                <div class="bar" id="rage__bar"></div>
+                <div class="subtitle">Rage level</div>
+            </div>
+        </section>
+
+        <!-- Beer Metrics -->
+        <section class="gamearea beer">
+            <button type="button" class="btn drink" id="drink">Drink</button>
+            <div class="progress error">
+                <div class="bar" id="beer__bar"></div>
+                <div class="subtitle">Beer Level</div>
+            </div>
+        </section>
+
+        <!-- Skill Metrics -->
+        <section class="gamearea skill">
+            <button type="button" class="btn practice" id="practice">Practice</button>
+            <div class="progress warning">
+                <div class="bar" id="skill__bar"></div>
+                <div class="subtitle">Skill Level</div>
+            </div>
+        </section>
+        <section class="gamearea avatar">
+
+
+           
+
+            <!-- Player Avatars -->
+
+            <img src="./images/mariah.png" alt="" class="buddy animate__animated" id="hippy">
+
+
+            <img src="./images/krampus.png" alt="" class="buddy animate__animated" id="metalhead">
+
+  
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+
+        <!-- Your Buddy is a -->
+        <section class="footer">
+            <div class="container dark">
+                <p>Your popstar: <span id="message"></span></p>
+            </div>
+        </section>
+    </footer>
 
     </body>
 </html>
