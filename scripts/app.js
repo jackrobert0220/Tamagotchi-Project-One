@@ -50,6 +50,11 @@ const songFX = new Audio('./audio/silent_night.mp3');
 
     /* Metric Functions */ 
 
+    increaseAge() {
+        (newGame.age) += 1;
+        return $('#span-age').text(`${newGame.age}`);
+    },
+
     reduceBank() {
         if (newGame.bankAccount <= 0) {
             clearInterval(newGame.charityTimer);
