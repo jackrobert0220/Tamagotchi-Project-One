@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">
+        <link rel="stylesheet" type="text/css" href="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="styles/main.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
         <script src="scripts/app.js" defer></script>
         
-        <title>Super Thrash Metal Buddies!</title>
+        <title>Let's Ruin the Holidays!</title>
     </head>
     <body class ="animate__animated">
 
          <!-- Input Form -->
-    <div class="container dark" id="input-form">
-        <div class="field name">
-            <label>Name your buddy</label>
+    <div class="inputBox" id="input-form">
+        <h1>Let's Ruin the Holidays!</h1>
+        <div class="">
+            <label>Name your popstar</label>
             <input type="text" class="input" id="input-name">
         </div>
-        <div class="field age">
-            <label>How old is your buddy?</label>
+        <div class="">
+            <label>How old is your popstar?</label>
             <input type="text" class="input" id="input-age">
             <button class="btn" id="input-button">Start Game</button>
         </div>
@@ -64,30 +65,32 @@
     <main class="maingame">
         <img src="/images/fire.jpeg" alt="" class="demon-throne" id="demon-throne">
         <section class="gamearea rage">
+            
+            
             <!-- <div class="container trash"> -->
-            <button type="button" class="btn trash" id="trash">Trash Dressing Room</button>
+            <button type="button" class="btn trash" id="trash">Holidays... or whatever...</button>
             <!-- </div> -->
             <div class="progress error">
                 <div class="bar" id="rage__bar"></div>
-                <div class="subtitle">Rage level</div>
+                <div class="subtitle">Holiday Cheer</div>
             </div>
         </section>
 
         <!-- Beer Metrics -->
         <section class="gamearea beer">
-            <button type="button" class="btn drink" id="drink">Drink</button>
+            <button type="button" class="btn drink" id="drink">Make Money</button>
             <div class="progress error">
                 <div class="bar" id="beer__bar"></div>
-                <div class="subtitle">Beer Level</div>
+                <div class="subtitle">Bank Account</div>
             </div>
         </section>
 
         <!-- Skill Metrics -->
         <section class="gamearea skill">
-            <button type="button" class="btn practice" id="practice">Practice</button>
+            <button type="button" class="btn practice" id="practice">Donate to Charity</button>
             <div class="progress warning">
                 <div class="bar" id="skill__bar"></div>
-                <div class="subtitle">Skill Level</div>
+                <div class="subtitle">Charitable Donations</div>
             </div>
         </section>
         <section class="gamearea avatar">

@@ -2,9 +2,9 @@ console.log("js is loaded");
 
 let nameInput = null;
 let ageInput = null;
-const trashFx = new Audio('https://freesound.org/data/previews/171/171996_112577-lq.mp3');
-const drinkFx = new Audio('https://freesound.org/data/previews/61/61392_792945-lq.mp3');
-const practiceFx = new Audio('https://freesound.org/data/previews/1/1401_838-lq.mp3');
+const trashFx = new Audio('./audio/bahHumbug.mp3');
+const drinkFx = new Audio('./audio/mariahHigh.mp3');
+const practiceFx = new Audio('./audio/mariahXmas.mp3');
 const songFX = new Audio('./audio/silent_night.mp3');
 
 
