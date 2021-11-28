@@ -221,15 +221,15 @@ const pauseSong = function pauseSong() {
 
 /* Event Listeners */
 
-$('#trash').on('click', newGame.cheerDance);
-$('#practice').on('click', newGame.donateDance);
-$('#drink').on('click', newGame.bankDance);
-$('#drink').on('click', newGame.playBank);
-$('#trash').on('click', newGame.playCheer);
-$('#practice').on('click', newGame.playDonate);
-$('#drink').on('click', newGame.makeMoney);
-$('#practice').on('click', newGame.donate);
-$('#trash').on('click', newGame.supressCheer);
+$('#cheer').on('click', newGame.cheerDance);
+$('#donate').on('click', newGame.donateDance);
+$('#bank').on('click', newGame.bankDance);
+$('#bank').on('click', newGame.playBank);
+$('#cheer').on('click', newGame.playCheer);
+$('#donate').on('click', newGame.playDonate);
+$('#bank').on('click', newGame.makeMoney);
+$('#donate').on('click', newGame.donate);
+$('#cheer').on('click', newGame.supressCheer);
 $("#input-button").on('click', function () {
     collectAge();
     collectName();
