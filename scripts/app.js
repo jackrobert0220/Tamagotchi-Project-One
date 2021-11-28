@@ -25,30 +25,30 @@ const songFX = new Audio('./audio/silent_night.mp3');
         ageTimer: null,
         transformTimer: null,
 
-    /* Timers */
-        
-        bankCounter() {
-            this.bankTimer = setInterval(this.reduceBank, 500);
-        },
-        
-        charityCounter() {
-            this.charityTimer = setInterval(this.reduceCharity, 500);
-        },
+/* Timers */
+    
+    bankCounter() {
+        this.bankTimer = setInterval(this.reduceBank, 500);
+    },
+    
+    charityCounter() {
+        this.charityTimer = setInterval(this.reduceCharity, 500);
+    },
 
-        cheerCounter() {
-            this.cheerTimer = setInterval(this.increaseCheer, 500);
-        },
+    cheerCounter() {
+        this.cheerTimer = setInterval(this.increaseCheer, 500);
+    },
 
-        ageCounter() {
-            this.ageTimer = setInterval(this.increaseAge, 5000);
-        },
+    ageCounter() {
+        this.ageTimer = setInterval(this.increaseAge, 5000);
+    },
 
-        transformCounter() {
-            this. transformTimer = setInterval(this.transform, 1000);
-        },
+    transformCounter() {
+        this. transformTimer = setInterval(this.transform, 1000);
+    },
 
 
-    /* Metric Functions */ 
+/* Metric Functions */ 
 
     increaseAge() {
         (newGame.age) += 1;
@@ -111,7 +111,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
 
 
 
-    /* Buttons */
+/* Buttons */
 
     makeMoney() {
         if (newGame.bankAccount < 100) {
@@ -133,7 +133,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
         }
     },
 
-    /* Button Animations */
+/* Button Animations */
     
     bankDance() {
         $('.popstar').addClass('animate__bounce animate__faster');
@@ -186,27 +186,30 @@ startGame() {
 /* Functions */
 
 const collectAge = function collectAge() {
-    console.log("sanity check");
     newGame.age = $('#input-age').val();
     newGame.age = parseInt(newGame.age);
     $('#span-age').text(`    ${newGame.age}`);
 };
 const collectName = function collectName() {
-    console.log("sanity check");
     newGame.name = $('#input-name').val();
     $('#span-name').text(`    ${newGame.name}`);
 };
+
+/* Bar Functions */
+
 const bankBar = function bankBar() {
-    return $('#beer__bar').css(`width`, `${newGame.bankAccount}%`);
+    return $('#bank__bar').css(`width`, `${newGame.bankAccount}%`);
 };
 const charityBar = function charityBar() {
-    return $('#skill__bar').css('width', `${newGame.charityDonations}%`);
+    return $('#skill__bar').css(`width`, `${newGame.charityDonations}%`);
 };
 const cheerBar = function cheerBar() {
-    return $('#rage__bar').css('width', `${newGame.holidayCheer}%`);
+    return $('#rage__bar').css(`width`, `${newGame.holidayCheer}%`);
 };
+
+
 const backTransition = function backTransition() {
-    $('#demon-throne').css("opacity", "100");
+    $('#fire').css("opacity", "100");
 };
 const playSong = function playSong() {
     songFX.play();

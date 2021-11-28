@@ -76,14 +76,6 @@ body{
 }
 
 
-
-.field {
-    margin-top: 10px;
-    padding-top: 10px;
-    background-color: rgb(12, 15, 15);
-    width: 300px;
-}
-
 input {
     padding: 5px;
     margin-left: 15px;
@@ -127,6 +119,10 @@ header .right {
     font-size: 40px;
 }
 
+.age {
+    color: green;
+    font-size: 40px;
+}
 
 
 
@@ -144,19 +140,16 @@ header .right {
     position: relative;
 }
 
-
-
-.rage {
-    height: 50px;;
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 500px;
-    padding-top: 10px;
-    padding-left: 20px;
-    z-index: 3;
+.bar {
+    width: 1%;
+  height: 30px;
+  background-color: green;
 }
 
-.beer {
+
+
+
+.bank {
     height: 50px;
     display: inline-block;
     margin-bottom: 10px;;
@@ -176,14 +169,18 @@ header .right {
      z-index: 3;
  }
 
- .skill__bar {
-    width: 0%;
-    height: 100%;
-    background-color: green;
-    position: absolute;
-    top: 0;
-    left: 0;
+ .rage {
+    height: 50px;;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 3;
 }
+
+
+
 
 
 
@@ -209,17 +206,6 @@ main .avatar {
     padding: 5px;
 }
 
-.amplifier {
-    max-height: 350px;
-    max-width: 200px;
-    height: auto;
-    width: auto;
-    align-self: flex-end;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 .btn #drink {
     margin-left: 20px;
@@ -240,7 +226,7 @@ main .avatar {
     left: 45%;
 }
 
-.demon-throne {
+.fire {
     z-index: 1;
     position: absolute;
     height: 70vh;
@@ -283,11 +269,6 @@ footer .center {
     display: inline-block;
 }
 
-footer .skill {
-    height: 100%;
-    flex-grow: 1;
-    display: inline-block;
-}
 
 .yourPopstar {
     color: green;

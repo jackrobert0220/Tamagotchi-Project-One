@@ -53,51 +53,52 @@
         </div>
         <div class="header middle"></div>
         <div class="header right">
-            <div class="">
+            <div class="age">
                 <p>Age:<span id="span-age"></span></p>
             </div>
         </div>
     </header>
 
 
-    <!-- Main Gameplay Section -->
-
+    <!-- Main Game -->
     <main class="maingame">
-        <img src="/images/fire.jpeg" class="demon-throne" id="demon-throne">
-        <section class="gamearea rage">
-            
-            <!-- Rage Metrics -->
+        <img src="/images/fire.jpeg" class="fire" id="fire">
+        
+
+    <!-- Beer Metrics -->
+        <section class="gamearea bank">
+            <button type="button" class="btn drink" id="drink">Make Money</button>
+            <div class="">
+                <div class="bar" id="bank__bar"></div>
+                <div class="subtitle">Bank Account</div>
+            </div>
+        </section>
+
+    <!-- Skill Metrics -->
+        <section class="gamearea skill">
+            <button type="button" class="btn practice" id="practice">Donate to Charity</button>
+            <div class="">
+                <div class="bar" id="skill__bar"></div>
+                <div class="subtitle">Charitable Donations</div>
+            </div>
+        </section>
+
+    <!-- Rage Metrics -->
+         <section class="gamearea rage">                  
             <button type="button" class="btn trash" id="trash">Holidays... or whatever...</button>
-            <!-- </div> -->
-            <div class="progress error">
+            <div class="">
                 <div class="bar" id="rage__bar"></div>
                 <div class="subtitle">Holiday Cheer</div>
             </div>
         </section>
 
-        <!-- Beer Metrics -->
-        <section class="gamearea beer">
-            <button type="button" class="btn drink" id="drink">Make Money</button>
-            <div class="progress error">
-                <div class="bar" id="beer__bar"></div>
-                <div class="subtitle">Bank Account</div>
-            </div>
-        </section>
 
-        <!-- Skill Metrics -->
-        <section class="gamearea skill">
-            <button type="button" class="btn practice" id="practice">Donate to Charity</button>
-            <div class="progress warning">
-                <div class="bar" id="skill__bar"></div>
-                <div class="subtitle">Charitable Donations</div>
-            </div>
-        </section>
         <section class="gamearea avatar">
 
 
            
 
-            <!-- Player Avatars -->
+    <!-- Player Avatars -->
 
             <img src="./images/mariah.png" class="popstar animate__animated" id="mariah">
 
@@ -113,7 +114,7 @@
     <!-- Footer Section -->
     <footer class="footer">
 
-        <!-- Your Buddy is a -->
+        <!-- Your Popstar-->
         <section class="footer">
             <div class="yourPopstar">
                 <p>Your popstar: <span id="message"></span></p>
