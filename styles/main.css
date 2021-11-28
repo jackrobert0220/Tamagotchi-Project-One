@@ -122,6 +122,11 @@ header .right {
     padding: 20px;
 }
 
+.name {
+    color: green;
+    font-size: 40px;
+}
+
 
 
 
@@ -141,7 +146,7 @@ header .right {
 
 
 
-main .rage {
+.rage {
     height: 50px;;
     display: inline-block;
     margin-bottom: 10px;
@@ -151,7 +156,7 @@ main .rage {
     z-index: 3;
 }
 
-main .beer {
+.beer {
     height: 50px;
     display: inline-block;
     margin-bottom: 10px;;
@@ -161,8 +166,8 @@ main .beer {
     z-index: 3;
 
 }
- main .skill {
-     height: 50px;;
+.skill {
+     height: 50px;
      display: inline-block;
      margin-bottom: 10px;
      width: 750px;
@@ -171,13 +176,24 @@ main .beer {
      z-index: 3;
  }
 
+ .skill__bar {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
 main .avatar {
     display: flex;
     flex-grow: 1;
     z-index: 3;
 }
 
-.buddy {
+.popstar {
     max-height: 400px;
     max-width: 300px;
     height: auto;
@@ -211,16 +227,17 @@ main .avatar {
 
 }
 
-#hippy {
+#mariah {
     position: absolute;
     z-index: 6;
-    left: 45%;
+    left: 38%;
     transform: translatey(100%);
 }
 
-#metalhead {
+#krampus {
     opacity: 0;
     transition: 7s linear;
+    left: 45%;
 }
 
 .demon-throne {
@@ -273,6 +290,7 @@ footer .skill {
 }
 
 .yourPopstar {
+    color: green;
     font-size: 40px;
 }
 

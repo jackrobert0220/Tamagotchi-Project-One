@@ -85,7 +85,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
         if (newGame.holidayCheer === 100) {
             clearInterval(newGame.charityTimer);
             clearInterval(newGame.bankTimer);
-            clearInterval(newGame.cheertimer);
+            clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
             return $('#quit-rage').show();
@@ -100,9 +100,9 @@ const songFX = new Audio('./audio/silent_night.mp3');
             console.log(newGame.time);
         }else{
             clearInterval(newGame.transformCounter);
-            $('#hippy').addClass('flash');
-            $('#hippy').fadeOut(3000);
-            setTimeout(function() { $('#metalhead').css('opacity', '100');}, 1000);
+            $('#mariah').addClass('flash');
+            $('#mariah').fadeOut(3000);
+            setTimeout(function() { $('#krampus').css('opacity', '100');}, 1000);
             setTimeout(playSong, 500);
             setTimeout(function() {$('#message').text("Let's Destroy the Holidays!!! HAHAHA");}, 4000);
             return setTimeout(backTransition, 4000);
@@ -136,18 +136,18 @@ const songFX = new Audio('./audio/silent_night.mp3');
     /* Button Animations */
     
     bankDance() {
-        $('.buddy').addClass('animate__bounce animate__faster');
-        setTimeout(function () { $('.buddy').removeClass('animate__bounce animate__faster'); }, 1000);
+        $('.popstar').addClass('animate__bounce animate__faster');
+        setTimeout(function () { $('.popstar').removeClass('animate__bounce animate__faster'); }, 1000);
     },
 
     donateDance() {
-        $('.buddy').addClass('animate__wobble animate__faster');
-        setTimeout(function () { $('.buddy').removeClass('animate__wobble animate__faster'); }, 1000);
+        $('.popstar').addClass('animate__wobble animate__faster');
+        setTimeout(function () { $('.popstar').removeClass('animate__wobble animate__faster'); }, 1000);
     },
 
     cheerDance() {
-        $('.buddy').addClass('animate__pulse animate__faster');
-        setTimeout(function () { $('.buddy').removeClass('animate__pulse animate__faster'); }, 1000);
+        $('.popstar').addClass('animate__pulse animate__faster');
+        setTimeout(function () { $('.popstar').removeClass('animate__pulse animate__faster'); }, 1000);
 
     },
 
@@ -230,9 +230,9 @@ $('#trash').on('click', newGame.supressCheer);
 $("#input-button").on('click', function () {
     collectAge();
     collectName();
-    $('#hippy').css("transition", "2s linear")
-    $('#hippy').css("transform", "translatey(0%)");
-    $('#hippy').css("opacity", "100");
+    $('#mariah').css("transition", "2s linear")
+    $('#mariah').css("transform", "translatey(0%)");
+    $('#mariah').css("opacity", "100");
     $("#input-form").remove();
     $("#message").text("will make as much $$$ as possible!!!")
     setTimeout(newGame.startGame, 2000);
