@@ -38,9 +38,10 @@ body{
     height: 200px;
     width: 500px;
     background-color: rgb(12, 15, 15);
+    color: white;
     display: none;
-    justify-content: center;
-    align-content: center;
+    font-size: 40px;
+    border-radius: 8px;
 }
 
 #quit-beer {
@@ -51,9 +52,10 @@ body{
     height: 200px;
     width: 500px;
     background-color: rgb(12, 15, 15);
+    color: white;
     display: none;
-    justify-content: center;
-    align-content: center;
+    font-size: 40px;
+    border-radius: 8px;
 }
 
 #quit-skill {
@@ -64,9 +66,10 @@ body{
     height: 200px;
     width: 500px;
     background-color: rgb(12, 15, 15);
+    color: white;
     display: none;
-    justify-content: center;
-    align-content: center;
+    font-size: 40px;
+    border-radius: 8px;
 }
 
 .quit > p{
@@ -123,6 +126,7 @@ header .right {
     color: green;
     font-size: 40px;
 }
+
 
 
 
@@ -312,4 +316,4 @@ footer .center {
     padding: 5px;
     border: 5px solid green;
     border-radius: 5%;
-}
+ }

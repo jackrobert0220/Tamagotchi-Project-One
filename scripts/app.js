@@ -2,9 +2,9 @@ console.log("js is loaded");
 
 let nameInput = null;
 let ageInput = null;
-const trashFx = new Audio('./audio/bahHumbug.mp3');
-const drinkFx = new Audio('./audio/mariahHigh.mp3');
-const practiceFx = new Audio('./audio/mariahXmas.mp3');
+const cheerFx = new Audio('./audio/bahHumbug.mp3');
+const bankFx = new Audio('./audio/mariahHigh.mp3');
+const donateFx = new Audio('./audio/mariahXmas.mp3');
 const songFX = new Audio('./audio/silent_night.mp3');
 
 
@@ -62,7 +62,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-beer').show();
+            return $('#quit-rage').show();
         }else{
             newGame.bankAccount -= 1;
         }
@@ -75,7 +75,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-skill').show();
+            return $('#quit-beer').show();
         }else{
             newGame.charityDonations -= 1;
         }
@@ -88,7 +88,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-rage').show();
+            return $('#quit-skill').show();
         }else{
             newGame.holidayCheer += 1;
         }
@@ -104,7 +104,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             $('#mariah').fadeOut(3000);
             setTimeout(function() { $('#krampus').css('opacity', '100');}, 1000);
             setTimeout(playSong, 500);
-            setTimeout(function() {$('#message').text("Let's Destroy the Holidays!!! HAHAHA");}, 4000);
+            setTimeout(function() {$('#message').text("WHAT HAVE I BECOME??? NEED MORE CHEER!");}, 4000);
             return setTimeout(backTransition, 4000);
         }
     },
@@ -155,15 +155,15 @@ const songFX = new Audio('./audio/silent_night.mp3');
 /* Sound Effects*/
 
 playBank() {
-    drinkFx.play();
+    bankFx.play();
 },
 
 playDonate() {
-    trashFx.play();
+    donateFx.play();
 },
 
 playCheer() {
-    practiceFx.play();
+    cheerFx.play();
 },
 
 playSong() {
@@ -237,7 +237,7 @@ $("#input-button").on('click', function () {
     $('#mariah').css("transform", "translatey(0%)");
     $('#mariah').css("opacity", "100");
     $("#input-form").remove();
-    $("#message").text("will make as much $$$ as possible!!!")
+    $("#message").text("I MAKE MORE MONEY THAN YOU... HAHAHA")
     setTimeout(newGame.startGame, 2000);
 });
 
