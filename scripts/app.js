@@ -62,7 +62,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-rage').show();
+            return $('#quit-bank').show();
         }else{
             newGame.bankAccount -= 1;
         }
@@ -75,7 +75,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-beer').show();
+            return $('#quit-charity').show();
         }else{
             newGame.charityDonations -= 1;
         }
@@ -88,7 +88,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             clearInterval(newGame.cheerTimer);
             clearInterval(newGame.transformTimer);
             setTimeout(pauseSong, 300);
-            return $('#quit-skill').show();
+            return $('#quit-cheer').show();
         }else{
             newGame.holidayCheer += 1;
         }
@@ -201,10 +201,10 @@ const bankBar = function bankBar() {
     return $('#bank__bar').css(`width`, `${newGame.bankAccount}%`);
 };
 const charityBar = function charityBar() {
-    return $('#skill__bar').css(`width`, `${newGame.charityDonations}%`);
+    return $('#charity__bar').css(`width`, `${newGame.charityDonations}%`);
 };
 const cheerBar = function cheerBar() {
-    return $('#rage__bar').css(`width`, `${newGame.holidayCheer}%`);
+    return $('#cheer__bar').css(`width`, `${newGame.holidayCheer}%`);
 };
 
 

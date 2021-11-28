@@ -30,7 +30,7 @@ body{
     position: absolute;
 }
 
-#quit-rage {
+#quit-cheer {
     z-index: 5;
     top: 35%;
     left: 30%;
@@ -44,7 +44,7 @@ body{
     border-radius: 8px;
 }
 
-#quit-beer {
+#quit-bank {
     z-index: 6;
     top: 35%;
     left: 30%;
@@ -58,7 +58,7 @@ body{
     border-radius: 8px;
 }
 
-#quit-skill {
+#quit-charity {
     z-index: 7;
     top: 35%;
     left: 30%;
