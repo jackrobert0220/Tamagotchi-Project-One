@@ -90,7 +90,7 @@ const songFX = new Audio('./audio/silent_night.mp3');
             setTimeout(pauseSong, 300);
             return $('#quit-cheer').show();
         }else{
-            newGame.holidayCheer += 1;
+            newGame.holidayCheer += 2;
         }
     },
 
