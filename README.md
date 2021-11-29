@@ -1,16 +1,16 @@
 # ApplicationName
 Tamagotchi Project One
-"The Holidays are Here!"
+"Let's Ruin the Holidays!!!"
 
 ## Concept:
-Explain the concept of the application or game. Include instructions and how to win/lose.
-Intro page declares "The Holidays are Here!!!" and allows user to input a name and age.
+Intro page declares "Let's ruin the Holidays!!!" with brief instructions and allows said user to input a name and age.
 
 First page of actual game shows 3 values:
-(Personal Bank Account) starts with $500,000 and decreases in increments of 
-50,000 slowly with time.
-(Holiday Cheer) starts with 5% and decreases by 5% slowly with time. Hitting 0% will do nothing.
-(Charity Donations) starts with $50,000 and decreases in increments of 10,000 slowly with time.
+(Make Money Button) A full metric bar that slowly decreases overtime, but increases each time the user pushes the "Make that Money!!! $$$" button. Representing money in bank account.
+(Donate to Charity Button) Another full metric bar that slowly decreases overtime, but increases each time user pushes the "Donate to Charity" button. Representing dontations made to charity.
+---- If either of these values hits 0, user loses and is greeted with a message unique to the metric.
+
+(Crush Holiday CheerButton) An empty metric bar that slowly increases overtime representing
 
 A charcter is displayed in middle of the screen, depicting Mariah Carey with Santa hat with holiday background (snow, xmas tree, etc.).
 
