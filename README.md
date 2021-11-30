@@ -59,5 +59,6 @@ Two outsanding problems is adding a mute button for the audio and add a subtitle
 
 
 ## App Demo
-Link to GitHub project (i.e. - username.github.io)
+Link to GitHub project [(i.e. - username.github.io)]
+(https://jackrobert0220.github.io/Tamagotchi-Project-One-Holiday/)
 
