@@ -2,6 +2,9 @@
 Tamagotchi Project One
 "Let's Ruin the Holidays!!!"
 
+![Screen Shot 2022-01-27 at 8 16 12 PM](https://user-images.githubusercontent.com/91999893/167306450-baec14d8-aea6-45d2-86e8-c8d5a327dc7d.png)
+![Screen Shot 2022-01-27 at 8 17 03 PM](https://user-images.githubusercontent.com/91999893/167306454-b60b3b75-0cc7-4fe9-8a60-f8d17ee7ca87.png)
+
 ## Concept:
 Intro page declares "Let's ruin the Holidays!!!" with brief instructions and allows said user to input a name and age.
 
